@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-ContactApp::Application.config.secret_key_base = '8fe2c6a1cf6b5db97fd0c4a84a7a0f81e02bc9512527defce6cbd0f0678e1c956913739ba25915c9cc0825f717801e445f67f711d359a1d759f9784aec63e8b1'
+ContactForm::Application.config.secret_key_base = '8fe2c6a1cf6b5db97fd0c4a84a7a0f81e02bc9512527defce6cbd0f0678e1c956913739ba25915c9cc0825f717801e445f67f711d359a1d759f9784aec63e8b1'

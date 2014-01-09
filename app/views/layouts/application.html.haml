@@ -4,23 +4,9 @@
     %title Contact
     = csrf_meta_tags
   %body
-    .container
-      - flash.each do |name, msg|
-        - if msg.is_a?(String)
-          %div{:class => "alert alert-#{name == :notice ? "success" : "error"}"}
-            %a.close{"data-dismiss" => "alert"}
-              &times;
-            = content_tag :div, msg, :id => "flash_#{name}"
-    .navbar.navbar-fixed-top
-      .navbar-inner
-        .container
-          .nav-collapse.collapse
-            %ul.nav
-              %li
-                = link_to t('home'), root_url
-              %li
-                = link_to t('contact'), new_contact_path    
+      
     = yield
+    = render :partial => 'layouts/header'  
 
     = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true

@@ -1,4 +1,4 @@
-ContactApp::Application.routes.draw do
+ContactForm::Application.routes.draw do
   root "home#index"
 
   resources "contacts", only: [:new, :create]
