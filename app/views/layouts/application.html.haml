@@ -2,8 +2,6 @@
 %html
   %head
     %title Contact
-    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
-    = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
     .container
@@ -23,3 +21,6 @@
               %li
                 = link_to t('contact'), new_contact_path    
     = yield
+
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
