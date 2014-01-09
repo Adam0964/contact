@@ -93,4 +93,5 @@ ContactApp::Application.configure do
   user_name: "adam0964@gmail.com",
   password:  "KINDERZENEN",
   openssl_verify_mode:  'none'
+}
 end
