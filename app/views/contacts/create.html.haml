@@ -1,5 +1,5 @@
 .container
-  %h3 #{@contact.name}, Thank you for your message. 
+  %h3 #{@contact.name.split.each{|i| i.capitalize!}.join(' ')}, Thank you for your message. 
   %br
   %p We'll get back to you shortly.
   %p

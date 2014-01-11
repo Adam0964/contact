@@ -67,6 +67,7 @@ group :development, :test do
     gem 'rack-livereload'
     gem 'guard-bundler'
     gem 'guard-rspec'
+    gem 'rspec'
 end
 # }
 
