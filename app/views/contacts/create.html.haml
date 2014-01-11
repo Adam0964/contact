@@ -1,6 +1,14 @@
 .container
-  %h3 #{@contact.name.split.each{|i| i.capitalize!}.join(' ')}, Thank you for your message. 
+  %span
+  %h3 #{@contact.name.split.each{|i| i.capitalize!}.join(' ')}, thank you for your message. 
   %br
-  %p We'll get back to you shortly.
+  %br
+  = image_tag 'hand.png', :size => '128x128'
+  %br
+  %br
+  %br
+  %p We'll get back to you within the next 24 hours.
   %p
-  = link_to 'Home', root_url, :class => 'button' 
+  %br
+  / = link_to 'Home', root_url, :class => 'button' 
+  %hr

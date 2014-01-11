@@ -4,13 +4,27 @@ body {
 h1 {
 	font-family: 'Helvetica Light';
 	margin-top: 50px;
-	margin-left: 350px;
+	margin-left: 270px;
 }
 h2 {
 	font-family: 'Helvetica Light';
 	margin-top: 50px;
-	margin-left: 470px;
+	margin-left: 420px;
 }
+
+h3 {
+	margin-top: 100px;
+	margin-left: 260px;
+}
+
+img {
+	margin-left: 45%;
+}
+
+.img2 {
+	margin-left: -12%;
+}
+
 input, select {
 	width: 520px;
 }
@@ -18,11 +32,12 @@ select {
 	width: 530px;
 }
 .nav-collapse {
-	margin-left: 450px;
+	margin-left: 410px;
 }
 .container p {
 	font-size: 16px;
 	font-family: Georgia, Serif;
+	text-align: center;
 }
 textarea {
     resize: none;
@@ -39,7 +54,7 @@ textarea {
 	padding-left:  210px;
 }
 .well {
-	margin-left: 250px;
+	margin-left: 200px;
 	height: 560px;
 	width: 550px;
 	padding: 20px;

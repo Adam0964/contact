@@ -38,7 +38,7 @@ ContactForm::Application.configure do
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: "adam0964@gmail.com",
-  password:  "XXXXXXXXXX",
+  password:  "XXXXXXXXX",
   openssl_verify_mode:  'none'
   # user_name: ENV["GMAIL_USERNAME"],
   # password:  ENV["GMAIL_PASSWORD"]
