@@ -91,7 +91,7 @@ ContactForm::Application.configure do
   authentication: "plain",
   enable_starttls_auto: true,
   user_name: "adam0964@gmail.com",
-  password:  "XXXXXXXXXX",
+  password:  "KINDERZENEN",
   openssl_verify_mode:  'none'
 }
 end
