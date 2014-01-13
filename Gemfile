@@ -67,7 +67,9 @@ group :development, :test do
     gem 'rack-livereload'
     gem 'guard-bundler'
     gem 'guard-rspec'
-    gem 'rspec'
+    gem 'rspec-rails'
+    gem 'capybara'
+    gem "spork-rails"
 end
 # }
 

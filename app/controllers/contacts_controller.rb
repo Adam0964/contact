@@ -4,14 +4,19 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(params[:contact])
-    @contact.request = request
-    if @contact.deliver
-      flash.now[:error]  = nil
-      flash.now[:notice] = 'Thank you for your message!'
-    else
-      flash.now[:error]  = 'Unable send message.'
-      render :new
-    end
+    begin
+      @contact = Contact.new(params[:contact])
+      @contact.request = request
+      if @contact.deliver
+        flash.now[:error]  = nil
+        flash.now[:notice] = nil
+      else
+        flash.now[:error]  = 'Unable to send message.'
+        render :new
+      end
+    rescue ScriptError 
+        flash[:error] = "Spam alert!."
+    end 
+   
   end
 end

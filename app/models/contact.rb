@@ -3,7 +3,7 @@ class Contact < MailForm::Base
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :contact_method, :validate => true
   attribute :message
-  attribute :nickname,  :captcha  => true
+  # attribute :nickname,  :captcha  => true
 
   # Declare the e-mail headers. 
   def headers
